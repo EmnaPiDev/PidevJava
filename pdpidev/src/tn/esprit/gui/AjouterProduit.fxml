@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="tn.esprit.gui.AjouterProduitController">
+   <children>
+      <TextField fx:id="referenceID" layoutX="236.0" layoutY="105.0" />
+      <Label layoutX="122.0" layoutY="68.0" text="Nom Produit" />
+      <Label layoutX="122.0" layoutY="109.0" text="Reference Produit" />
+      <Label layoutX="122.0" layoutY="143.0" text="Prix Produit" />
+      <Label layoutX="121.0" layoutY="174.0" text="Couleur Produit" />
+      <Label layoutX="120.0" layoutY="208.0" text="Poids Produit" />
+      <Label layoutX="121.0" layoutY="242.0" text="Description Produit" />
+      <Label layoutX="122.0" layoutY="281.0" text="Image" />
+      <Label layoutX="120.0" layoutY="314.0" text="CatégorieID" />
+      <TextField fx:id="nomID" layoutX="237.0" layoutY="64.0" />
+      <TextField fx:id="prixID" layoutX="237.0" layoutY="139.0" />
+      <TextField fx:id="couleurID" layoutX="238.0" layoutY="170.0" />
+      <TextField fx:id="poidID" layoutX="239.0" layoutY="204.0" />
+      <TextField fx:id="descriptionID" layoutX="239.0" layoutY="238.0" />
+      <TextField fx:id="imageID" layoutX="241.0" layoutY="277.0" />
+      <Label layoutX="111.0" layoutY="8.0" text="Veuillez rempli le formulaire suivant" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="ajouterID" layoutX="274.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddProduit" text="Ajouter" />
+      <ComboBox fx:id="categoryCombo" layoutX="240.0" layoutY="310.0" prefWidth="150.0" />
+      <TextField fx:id="ID" layoutX="237.0" layoutY="38.0" />
+      <Label layoutX="122.0" layoutY="42.0" text="ID" />
+   </children>
+</AnchorPane>

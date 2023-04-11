@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="976.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.gui.AfficherProduitController">
+   <children>
+      <TableView fx:id="tvProduct" layoutX="396.0" layoutY="119.0" prefHeight="334.0" prefWidth="528.0">
+        <columns>
+          <TableColumn fx:id="tfID" prefWidth="28.0" text="Id" />
+          <TableColumn fx:id="txfNom" prefWidth="98.4000244140625" text="Nom" />
+            <TableColumn fx:id="txfRef" prefWidth="66.39996337890625" text="Reference" />
+            <TableColumn fx:id="tfPrix" prefWidth="75.199951171875" text="Prix" />
+            <TableColumn fx:id="tfColor" prefWidth="85.5999755859375" text="Couleur" />
+            <TableColumn fx:id="tfPoid" prefWidth="85.5999755859375" text="Poid" />
+            <TableColumn fx:id="txDesc" prefWidth="85.5999755859375" text="Description" />
+        </columns>
+      </TableView>
+      <TextField fx:id="IDproduct" layoutX="121.0" layoutY="109.0" />
+      <TextField fx:id="NOMproduct" layoutX="122.0" layoutY="151.0" />
+      <TextField fx:id="REFproduct" layoutX="122.0" layoutY="193.0" />
+      <TextField fx:id="PRIXproduct" layoutX="123.0" layoutY="237.0" />
+      <TextField fx:id="POIDproduct" layoutX="124.0" layoutY="282.0" />
+      <TextField fx:id="COLORproduct" layoutX="123.0" layoutY="329.0" />
+      <TextField fx:id="DESCproduct" layoutX="125.0" layoutY="378.0" />
+      <Label layoutX="65.0" layoutY="111.0" text="ID" />
+      <Label layoutX="63.0" layoutY="155.0" text="Nom" />
+      <Label layoutX="63.0" layoutY="197.0" text="Reference" />
+      <Label layoutX="63.0" layoutY="237.0" text="Prix" />
+      <Label layoutX="62.0" layoutY="286.0" text="Poid" />
+      <Label layoutX="53.0" layoutY="333.0" text="Couleur" />
+      <Label layoutX="52.0" layoutY="382.0" text="Description" />
+      <Button fx:id="btninsert" layoutX="51.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Insert" />
+      <Button fx:id="btnupdate" layoutX="136.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Update" />
+      <Button fx:id="btndelet" layoutX="231.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" />
+      <Button fx:id="categorie" layoutX="104.0" layoutY="499.0" mnemonicParsing="false" onAction="#AjoutCategorieRoot" prefHeight="26.0" prefWidth="118.0" text="Ajouter Categorie" />
+   </children>
+</AnchorPane>
